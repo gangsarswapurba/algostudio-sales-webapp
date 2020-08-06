@@ -15,15 +15,32 @@
 <!-- chartjs -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
 <script>
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+var amount_orders = [];
+var to_date = new Date().getDate();
+
+for (var i = 0; i < 31; i++) {
+  if (i < to_date) {
+    amount_orders[i] = getRandomInt(10);
+  } else {
+    amount_orders[i] = 0;
+  }
+
+}
+
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['1', '2', '3', '4', '5', '6'],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31'],
         datasets: [{
             label: 'Penjualan tanggal #',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
+            data: amount_orders,
+            borderWidth: 1,
+            backgroundColor: '#71c7ec'
         }]
     },
     options: {
