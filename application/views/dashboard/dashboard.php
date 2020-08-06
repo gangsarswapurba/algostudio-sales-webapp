@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <h2>Penjualan Bulan <?php echo date('F'); ?> Ini</h2>
     <canvas id="myChart" width="" height=""></canvas>
 
-    <h2 class="mt-5 mb-0">10 Penjualan Terakhir</h2>
+    <h2 class="mt-5 mb-4">10 Penjualan Terakhir</h2>
     <table id="product_table" class="table table-striped table-bordered table-responsive-sm" style="width:100%">
         <thead>
         <tr>
