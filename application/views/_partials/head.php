@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- bootstrap -->
-    <link rel="stylesheet" href="<?= base_url('assets/css/vendor/bootstrap.min.css') ?>"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- datatable -->
     <link rel="stylesheet" href="<?= base_url('assets/css/vendor/datatables.min.css') ?>"/>
     <!-- fontawesome -->
