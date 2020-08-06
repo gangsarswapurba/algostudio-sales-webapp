@@ -20,7 +20,7 @@ class Order extends CI_Controller {
         $data = array();
         $data['products'] = $this->product->getProductsByOrderId($id);
         if(!$id || !$data['products']){
-            $this->session->set_flashdata('mensagem', array('danger','Pedido não encontrado!'));
+            $this->session->set_flashdata('mensagem', array('danger','Transaksi tidak ada!'));
             redirect('/');
         }
         $order_price = 0;
@@ -71,7 +71,7 @@ class Order extends CI_Controller {
         }
 
         if($send_form){
-            $this->session->set_flashdata('mensagem', array('success','Transaksi penjualan berhasil!'));
+            $this->session->set_flashdata('mensagem', array('success','Transaksi penjualan berhasil ditambahkan!'));
             redirect('order');
         }
         else
