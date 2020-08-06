@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <tr>
                     <td><?= $order->id ?></td>
                     <td><?php $data = new DateTime($order->data); echo $data->format('d/m/Y - H:i:s') ?></td>
-                    <td><a href="<?= base_url('order/view/'.$order->id) ?>"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
+                    <td><a href="<?= base_url('order/view/'.$order->id) ?>"><i class="fa fa-info-circle" aria-hidden="true"></i></a></td>
                     <td><a class="delete-order" href="#" data-id="<?= base_url('order/delete/'.$order->id) ?>" data-toggle="modal" data-target="#deleteOrderModal"><i class="fa fa-trash" aria-hidden="true"></i>
 </a></td>
                 </tr>
