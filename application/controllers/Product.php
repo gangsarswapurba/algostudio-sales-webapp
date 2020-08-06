@@ -42,7 +42,7 @@ class Product extends CI_Controller {
         }
 
         if($send_form){
-            $this->session->set_flashdata('mensagem', array('success','Detail Produk Berhasil Berhasil!'));
+            $this->session->set_flashdata('mensagem', array('success','Detail produk berhasil diubah!'));
             redirect('product');
         }
         else
