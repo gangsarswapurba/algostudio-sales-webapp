@@ -42,13 +42,13 @@ class Product extends CI_Controller {
         }
 
         if($send_form){
-            $this->session->set_flashdata('mensagem', array('success','Produto salvo com sucesso!'));
+            $this->session->set_flashdata('mensagem', array('success','Detail Produk Berhasil Berhasil!'));
             redirect('product');
         }
         else
         {
-            $this->session->set_flashdata('mensagem', array('danger','Ops! Dados incorretos!'));
-            redirect('product/form');
+            $this->session->set_flashdata('mensagem', array('danger','Ops! Tidak ada yang diubah!'));
+            redirect("product/form/$id");
         }
     }
 
@@ -56,12 +56,12 @@ class Product extends CI_Controller {
     {
         $delete = $this->product->deleteProduct($id);
         if($delete){
-            $this->session->set_flashdata('mensagem', array('success','Produto deletado com sucesso!'));
+            $this->session->set_flashdata('mensagem', array('success','Produk berhasil dihapus!'));
             redirect('product');
         }
         else
         {
-            $this->session->set_flashdata('mensagem', array('danger','Ops! Produto não encontrado!'));
+            $this->session->set_flashdata('mensagem', array('danger','Ops! Produk tidak ada!'));
             redirect('product');
         }
     }

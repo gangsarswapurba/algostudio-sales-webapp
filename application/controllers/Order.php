@@ -71,13 +71,13 @@ class Order extends CI_Controller {
         }
 
         if($send_form){
-            $this->session->set_flashdata('mensagem', array('success','Pedido salvo com sucesso!'));
-            redirect('');
+            $this->session->set_flashdata('mensagem', array('success','Transaksi penjualan berhasil!'));
+            redirect('order');
         }
         else
         {
-            $this->session->set_flashdata('mensagem', array('danger','Selecione no mínimo um produto!'));
-            redirect('');
+            $this->session->set_flashdata('mensagem', array('danger','Tambah setidaknya satu produk quantity'));
+            redirect('order/new');
         }
     }
 
@@ -85,13 +85,19 @@ class Order extends CI_Controller {
     {
         $delete = $this->order->deleteOrder($id);
         if($delete){
-            $this->session->set_flashdata('mensagem', array('success','Pedido deletado com sucesso!'));
+            $this->session->set_flashdata('mensagem', array('success','Transaksi penjualan berhasil dihapus!'));
             redirect('order');
         }
         else
         {
-            $this->session->set_flashdata('mensagem', array('danger','Ops! Pedido não encontrado!'));
+            $this->session->set_flashdata('mensagem', array('danger','Ops! pesanan tidak ada!'));
             redirect('order');
         }
+    }
+
+    public function new()
+    {
+      $data['products'] = $this->product->getProducts();
+      $this->load->view('order/order_new', $data);
     }
 }

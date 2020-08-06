@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
-<html lang="id-ID">
+<html lang="pt-BR">
 <?php $this->load->view('_partials/head'); ?>
 <body>
 <?php $this->load->view('_partials/header'); ?>
@@ -12,7 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     if(isset($order) && $order){
         foreach ($order as $pedido);
         $action_form = $action_form.$pedido->id ?>
-        <h1>Editar Pedido: <?= $pedido->id ?></h1>
+        <h1>Edit Transaksi: <?= $pedido->id ?></h1>
     <?php } else { ?>
         <h1>Tambah Transaksi Penjualan</h1>
     <?php }
@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-sm-4 col-xs-4"><b>Nama</b></div>
                     <div class="col-sm-3 col-xs-3"><b>SKU</b></div>
                     <div class="col-sm-3 col-xs-3"><b>Harga</b></div>
-                    <div class="col-sm-2 col-xs-2"><b>Quantity</b></div>
+                    <div class="col-sm-2 col-xs-2"><b>Quantity<sup>*</sup></b></div>
                 </div>
                 <div class="row">
                     <div class="col-sm-4 col-xs-4"><?= $product->nome ?></div>
