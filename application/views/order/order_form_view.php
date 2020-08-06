@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="id-ID">
 <?php $this->load->view('_partials/head'); ?>
-<body>
+<body id="order-view">
 <?php $this->load->view('_partials/header'); ?>
 <div class="container container-person mt-5 p-5">
     <?=write_message()?>
