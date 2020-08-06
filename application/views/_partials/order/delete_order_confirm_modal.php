@@ -12,7 +12,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                <a href="#" class="btn btn-primary" name="confirmDeleteOrder" id="confirmDeleteOrder">Hapus</a>
+                <a href="#" class="btn btn-danger" name="confirmDeleteOrder" id="confirmDeleteOrder">Hapus</a>
             </div>
         </div>
     </div>
