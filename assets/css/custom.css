@@ -19,3 +19,7 @@ body{
     color: white;
     font-weight: bold;
 }
+
+.fa.fa-trash {
+    color: red;
+}

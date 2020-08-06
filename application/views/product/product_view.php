@@ -33,8 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <td><?= $product->nome ?></td>
                     <td><?= $product->sku ?></td>
                     <td><?= $product->preco ?></td>
-                    <td><a href="<?= base_url('product/form/'.$product->id) ?>">Edit</a></td>
-                    <td><a class="delete-product" href="#" data-id="<?= base_url('product/delete/'.$product->id) ?>" data-toggle="modal" data-target="#deleteProductModal">Hapus</a></td>
+                    <td><a href="<?= base_url('product/form/'.$product->id) ?>"><i class="fa fa-edit" aria-hidden="true"></i>
+</a></td>
+                    <td><a class="delete-product" href="#" data-id="<?= base_url('product/delete/'.$product->id) ?>" data-toggle="modal" data-target="#deleteProductModal"><i class="fa fa-trash" aria-hidden="true"></i>
+</a></td>
                 </tr>
             <?php }
         } else { ?>
