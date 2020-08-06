@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="container container-person mt-5 p-5">
     <?=write_message()?>
     <h2>Penjualan Bulan Ini</h2>
-    <canvas id="orders-by-day-graph" width="400" height="400"></canvas>
+    <canvas id="myChart" width="400" height="400"></canvas>
 
     <h2>10 Penjualan Terakhir</h2>
     <table id="product_table" class="table table-striped table-bordered table-responsive-sm" style="width:100%">
