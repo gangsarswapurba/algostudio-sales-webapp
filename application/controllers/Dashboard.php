@@ -29,6 +29,6 @@ class Dashboard extends CI_Controller {
    public function index(){
        $data = array();
        $data['orders'] = $this->order->getOrders();
-       $this->load->view('order/order_view', $data);
+       $this->load->view('dashboard/dashboard', $data);
    }
 }

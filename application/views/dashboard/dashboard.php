@@ -3,16 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="id-ID">
 <?php $this->load->view('_partials/head'); ?>
-<body>
+<body id="dashboard">
 <?php $this->load->view('_partials/header'); ?>
 <div class="container container-person mt-5 p-5">
     <?=write_message()?>
-    <h1>Daftar Penjualan</h1>
-    <div class="col-md-12 mb-3">
-        <div class="row">
-            <a class="btn btn-primary" href="<?= base_url('/order/new') ?>">Tambah Transaksi Penjualan</a>
-        </div>
-    </div>
+    <h2>10 Penjualan Terakhir</h2>
     <table id="product_table" class="table table-striped table-bordered table-responsive-sm" style="width:100%">
         <thead>
         <tr>
