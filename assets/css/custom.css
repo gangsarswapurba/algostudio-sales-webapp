@@ -2,7 +2,7 @@ body{
     background-color: lightgray;
 }
 
-body#dashboard #product_table_length {
+body#dashboard #product_table_length, body#dashboard #product_table_filter, body#dashboard #product_table_paginate {
     visibility: hidden;
 }
 
