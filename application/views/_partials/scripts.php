@@ -61,4 +61,6 @@ var myChart = new Chart(ctx, {
 });
 </script>
 <!-- custom js-->
-<script src="<?= base_url('assets/js/custom.js') ?>"></script>
+<?php $custom_js_file = base_url('assets/js/custom.js') ?>
+<?php $created_time = filemtime(FCPATH . 'assets/js/custom.js') ?>
+<script src="<?= $custom_js_file . '?v=' . $created_time ?>"></script>
