@@ -37,5 +37,7 @@
     <!-- chartjs -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
     <!-- custom css-->
-    <link rel="stylesheet" href="<?= base_url('assets/css/custom.css') ?>"/>
+    <?php $custom_css_file = base_url('assets/css/custom.css') ?>
+    <?php $created_time = filemtime(FCPATH . 'assets/css/custom.css') ?>
+    <link rel="stylesheet" href="<?php echo $custom_css_file . '?v=' . $created_time?>"/>
 </head>
