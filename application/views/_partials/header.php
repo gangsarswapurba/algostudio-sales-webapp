@@ -1,5 +1,5 @@
-<header class="main-header shadow">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
         <a class="navbar-brand" href="<?= base_url('') ?>"><img src="<?php echo base_url('assets/img/algostudio.svg') ?>" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
