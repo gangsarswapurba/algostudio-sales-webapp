@@ -8,11 +8,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                Data transaksi penjualan berhasil dihapus!
+                Ingat, data transaksi penjualan yang sudah dihapus tidak dapat direstore lagi, lho!
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                <a href="#" class="btn btn-danger" name="confirmDeleteOrder" id="confirmDeleteOrder">Hapus</a>
+                <a href="#" class="btn btn-danger" name="confirmDeleteOrder" id="confirmDeleteOrder"><i style="color: white;" class="fa fa-trash" aria-hidden="true"></i> Hapus</a>
             </div>
         </div>
     </div>
