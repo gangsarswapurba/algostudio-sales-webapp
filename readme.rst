@@ -3,9 +3,9 @@ Petunjuk Install
 *******************
 1. create database dengan credential di bawah ini:
 
-	* username: algostudio
-	* password: algostudio
-	* database: algostudio
+	* username: u4354245_algostudio
+	* password: u4354245_algostudio
+	* database: u4354245_algostudio
 
 2. export file algostudio.sql yang ada di direktori dump_database.
 
