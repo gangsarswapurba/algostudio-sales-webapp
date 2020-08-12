@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php $this->load->view('_partials/head'); ?>
 <body>
 <?php $this->load->view('_partials/header'); ?>
-<div class="container container-person mt-5 p-5">
+<div class="container container-person mt-5 p-5 shadow">
     <?=write_message()?>
     <h1>Daftar Penjualan</h1>
     <div class="col-md-12 mb-3">
