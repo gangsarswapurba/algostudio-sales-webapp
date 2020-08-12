@@ -2,6 +2,10 @@ body{
     background-color: lightgray;
 }
 
+.nav-item button {
+    font-weight: bold;
+}
+
 body#dashboard .dataTables_length, body#dashboard .dataTables_filter, body#dashboard .dataTables_paginate,
 body#order-view .dataTables_length, body#order-view .dataTables_filter, body#order-view .dataTables_paginate {
     display: none;
