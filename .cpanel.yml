@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u4354245/public_html/algostudio-sales-webapp/
+    - /bin/cp -R * $DEPLOYPATH
