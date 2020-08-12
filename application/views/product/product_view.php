@@ -7,12 +7,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php $this->load->view('_partials/header'); ?>
 <div class="container container-person mt-5 p-5 shadow">
     <?=write_message()?>
-    <h1>Daftar Produk</h1>
-    <div class="col-md-12 mb-3">
-        <div class="row">
-            <a class="btn btn-primary" href="<?= base_url('product/form/') ?>">Tambah Produk Baru</a>
-        </div>
-    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <h1>Daftar Produk</h1>
+      </div>
+      <div class="col-md-6 text-right">
+        <a class="btn btn-primary" href="<?= base_url('/product/form/') ?>"><i class="fas fa-plus-circle"></i> Tambah Produk</a>
+      </div>
+    </div><!-- .row -->
     <table id="product_table" class="table table-striped table-bordered table-responsive-sm" style="width:100%">
         <thead>
         <tr>
