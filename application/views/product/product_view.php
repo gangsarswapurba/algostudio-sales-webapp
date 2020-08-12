@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php $this->load->view('_partials/header'); ?>
 <div class="container container-person mt-5 p-5">
     <?=write_message()?>
-    <h1>Produk</h1>
+    <h1>Daftar Produk</h1>
     <div class="col-md-12 mb-3">
         <div class="row">
             <a class="btn btn-primary" href="<?= base_url('product/form/') ?>">Tambah Produk Baru</a>
