@@ -49,6 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 <?php $this->load->view('_partials/product/delete_product_confirm_modal'); ?>
 <?php $this->load->view('_partials/scripts'); ?>
+<?php $this->load->view('_partials/footer'); ?>
 </body>
 
 </html>

@@ -43,6 +43,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php } ?>
 </div>
 <?php $this->load->view('_partials/scripts'); ?>
+<?php $this->load->view('_partials/footer'); ?>
 </body>
 
 </html>
