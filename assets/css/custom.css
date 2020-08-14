@@ -36,3 +36,12 @@ body#order-view .dataTables_length, body#order-view .dataTables_filter, body#ord
 .fa.fa-trash {
     color: red;
 }
+
+footer, footer a, footer a:hover {
+    background-color: black;
+    color: white;
+}
+
+footer span {
+    color: rgba(255, 255, 255, .6);
+}
